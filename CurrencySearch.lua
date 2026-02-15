@@ -212,7 +212,7 @@ end
 
 local function CreateSearchUI(tokenFrame)
     local editBox = CreateFrame("EditBox", "WOWCurrencySearchBox", tokenFrame, "InputBoxTemplate")
-    editBox:SetSize(160, 20)
+    editBox:SetSize(140, 20)
     editBox:SetPoint("TOPLEFT", tokenFrame, "TOPLEFT", 70, -35)
     editBox:SetAutoFocus(false)
     editBox:SetTextInsets(8, 20, 0, 0)
