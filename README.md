@@ -17,7 +17,8 @@ Commands
 Behavior details
 - When disabled, the search box is hidden and any active filter text is cleared.
 - When enabled, the search box appears when the currency pane is available.
-- Headers are kept visible during filtering so category context remains readable.
+- Category headers are hidden while a search query is active to show only matching currencies.
+- Collapsed categories are temporarily expanded while searching, then restored when the search is cleared or the tab closes.
 
 Installation
 1. Place the `CurrencySearch` folder in your `World of Warcraft/_retail_/Interface/AddOns/` directory.
