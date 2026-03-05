@@ -365,7 +365,9 @@ function CurrencySearch:ApplyFilter()
             if not enabled or not hasQuery then
                 button:Show()
             else
-                if not isFilterableCurrencyRow(button) then
+                if isHeaderRow(button) then
+                    button:Hide()
+                elseif not isFilterableCurrencyRow(button) then
                     button:Show()
                 else
                     local rowName = lower(getCurrencyLabel(button) or "")
